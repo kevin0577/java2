@@ -1,19 +1,11 @@
 
 public class Main {
 	public static void main(String[] args) {
-		int val = 2 + 5;
-		System.out.println(val);
+		Human01 yamada = new Human01(); //Human01クラスのインスタンスを生成
+        System.out.println("名前は" + yamada.name + "で、年齢は" + yamada.age + "です。");
 
-		val++;
-		System.out.println(val);
-
-		val *= 5;
-		System.out.println(val);
-
-		boolean bool = (val == 50);
-		System.out.println(bool);
-
-		bool = (val < 50) && (val % 10 == 0);
-		System.out.println(bool);
+        Human01 sato = new Human01("佐藤", 25); //Human01クラスのインスタンスを生成
+        System.out.println("名前は" + sato.name + "で、年齢は" + sato.age + "です。");
 	}
+
 }
